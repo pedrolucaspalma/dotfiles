@@ -14,4 +14,5 @@ sudo flatpak install flathub fyi.zoey.TeX-Match -y # Tex Match
 sudo flatpak install flathub com.getpostman.Postman -y # Postman
 sudo flatpak install flathub org.libreoffice.LibreOffice -y # LibreOffice
 sudo flatpak install flathub org.videolan.VLC -y # VLC
+sudo flatpak install flathub com.spotify.Client #Spotify
 
