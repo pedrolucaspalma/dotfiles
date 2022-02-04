@@ -101,11 +101,31 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Aliases
-alias lsaliases="echo upd"
+alias lsaliases="echo upd && echo opdados"
 alias upd="sudo apt update && sudo apt upgrade && sudo flatpak update"
-alias opdados="cd dados-legais && cd dados-legais-api && git pull && code . && cd ../dados-legais-admin && git pull && code . && .."
-
+alias opdados="cd ~ && cd dados-legais && cd dados-legais-api && code . && cd ../dados-legais-admin && code . && cd ~"
+alias oplfa="cd ~ && nautilus /home/pedro/Downloads/pedro/unirio/2021-2-ead/lfa && cd ~"
+alias opedd="cd ~ && nautilus /home/pedro/Downloads/pedro/unirio/2021-2-ead/edd1.2"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/pedro/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/pedro/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/pedro/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/pedro/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

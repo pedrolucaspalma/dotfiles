@@ -20,3 +20,7 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-c
 
 Reinicia o pc antes e depois do prox comando
 sudo chmod +x /usr/local/bin/docker-compose
+
+# ____RVM e Ruby
+# https://github.com/rvm/ubuntu_rvm
+# https://rvm.io/rvm/install

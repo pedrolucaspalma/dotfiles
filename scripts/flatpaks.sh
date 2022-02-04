@@ -15,4 +15,5 @@ sudo flatpak install flathub com.getpostman.Postman -y # Postman
 sudo flatpak install flathub org.libreoffice.LibreOffice -y # LibreOffice
 sudo flatpak install flathub org.videolan.VLC -y # VLC
 sudo flatpak install flathub com.spotify.Client #Spotify
+sudo flatpak install flathub io.gitlab.jstest_gtk.jstest_gtk # Troço de remap do controle xbox
 
