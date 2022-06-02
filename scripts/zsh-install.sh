@@ -12,6 +12,18 @@ echo
 echo -----------------
 echo verifique se saiu algo como zsh 5.8 x86_64-ubuntu-linux-gnu
 
+
+# Reinicie o terminal e rode o comando abaixo para mudar o shell padrão para o zsh
+# chsh -s $(which zsh)
+
+# re-logue e confira se o zsh é o padrão
+# echo $SHELL
+# Expected result: /bin/zsh or similar.
+
+# $SHELL --version. Expected result: 'zsh 5.8' or similar
+
+#================================================================================
+
 # whereis zsh
 # sudo usermod -s /usr/bin/zsh $(whoami)
 

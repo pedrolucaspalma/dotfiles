@@ -8,12 +8,12 @@ sudo flatpak install flathub com.discordapp.Discord -y # Discord
 sudo flatpak install flathub com.obsproject.Studio -y # OBS
 sudo flatpak install flathub org.signal.Signal -y # Signal
 #sudo flatpak install flathub com.slack.Slack -y # Slack
-sudo flatpak install flathub us.zoom.Zoom -y # Zoom
-sudo flatpak install flathub org.texstudio.TeXstudio -y # TexStudio
+#sudo flatpak install flathub us.zoom.Zoom -y # Zoom
+#sudo flatpak install flathub org.texstudio.TeXstudio -y # TexStudio
 sudo flatpak install flathub fyi.zoey.TeX-Match -y # Tex Match
 sudo flatpak install flathub com.getpostman.Postman -y # Postman
 sudo flatpak install flathub org.libreoffice.LibreOffice -y # LibreOffice
 sudo flatpak install flathub org.videolan.VLC -y # VLC
-sudo flatpak install flathub com.spotify.Client #Spotify
-sudo flatpak install flathub io.gitlab.jstest_gtk.jstest_gtk # Troço de remap do controle xbox
-
+sudo flatpak install flathub com.spotify.Client -y #Spotify
+sudo flatpak install flathub io.gitlab.jstest_gtk.jstest_gtk -y # Troço de remap do controle xbox
+sudo flatpak install flathub org.cvfosammmm.Setzer -y # Setzer

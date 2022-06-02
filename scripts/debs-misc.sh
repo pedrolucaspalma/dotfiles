@@ -1,10 +1,10 @@
 #____Vscode 
-baixar no site
+# baixar no site
 
 # ____NVM
 #Rodar depois de instalar o zsh. 
 #------>>>>QUANTO TERMINAR DE RODAR, REINICIAR O TERMINAL<<<--------
-sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash #isso baixa o script de instalação do github.
 nvm install --lts
 nvm use --lts
 
