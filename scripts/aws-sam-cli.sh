@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script is used to install AWS SAM CLI
+
+# Download the AWS SAM CLI zip file to a directory of your choice.
+
 # Verify the integrity and authenticity of the downloaded installer files by generating a hash value using the following command:
 sha256sum aws-sam-cli-linux-x86_64.zip
 
