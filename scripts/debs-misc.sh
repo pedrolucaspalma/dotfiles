@@ -16,6 +16,7 @@ npm install --global yarn
 # ____Docker olha la no site
 # Reinicia o pc antes e depois do prox comando (rodar docker sem sudo)
 sudo usermod -aG docker $(whoami)
+#https://docs.docker.com/engine/install/linux-postinstall/
 
 # ____Docker-Compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.15.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
