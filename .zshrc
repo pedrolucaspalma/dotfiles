@@ -101,6 +101,7 @@ alias lsalias="cat ~/.zshrc | grep 'alias '"
 alias yayf="yay -Syu  && flatpak update -y"
 alias dcu="docker compose up -d && docker logs -f sticky-api"
 alias dcd="docker compose stop"
+alias cnas="ssh pedro@192.168.1.200"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
