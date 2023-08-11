@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installation
-yay -s docker
+yay -S docker
 
 # Running without privileges
 sudo groupadd docker
@@ -14,5 +14,8 @@ newgrp docker
 # Starting service on boot
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
+# Installing docker-compose
+yay -S docker-compose
 
 # Log out and log in after install
