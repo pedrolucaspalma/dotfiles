@@ -103,7 +103,10 @@ alias dcu="docker compose up -d && docker logs -f sticky-api"
 alias dcd="docker compose stop"
 alias cnas="ssh pedro@192.168.1.200"
 alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && cd ~"
+alias updob="cd ~/Developer/obsidian-notes && git add . && git commit -a -m 'upd' && git push"
+
 export NVM_DIR="$HOME/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
