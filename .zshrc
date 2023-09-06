@@ -89,11 +89,17 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+export NVM_DIR="$HOME/.nvm"
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -102,11 +108,9 @@ alias yayf="yay -Syu  && flatpak update -y"
 alias dcu="docker compose up -d && docker logs -f sticky-api"
 alias dcd="docker compose stop"
 alias cnas="ssh pedro@192.168.1.200"
-alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && cd ~"
-alias updob="cd ~/Developer/obsidian-notes && git add . && git commit -a -m 'upd' && git push"
-
-export NVM_DIR="$HOME/.nvm"
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && updob && cd ~"
+alias updob="cd ~/Developer/obsidian-notes && git add . && git commit -a -m 'upd' && git push && cd ~"
+alias cvim="nvim ~/.config/nvim/init.lua"
+alias svim="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.config/nvim/init.lua . && git add . && git commit -m 'upd init.lua' && git push"
+alias czsh="nvim ~/.zshrc"
+alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && git add . && git commit -m 'upd .zshrc' && git push"
