@@ -113,4 +113,4 @@ alias updob="cd ~/Developer/obsidian-notes && git add . && git commit -a -m 'upd
 alias cvim="nvim ~/.config/nvim/init.lua"
 alias svim="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.config/nvim/init.lua . && git add . && git commit -m 'upd init.lua' && git push"
 alias czsh="nvim ~/.zshrc"
-alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && git add . && git commit -m 'upd .zshrc' && git push"
+alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && git add .zshrc && git commit -m 'upd .zshrc' && git push"
