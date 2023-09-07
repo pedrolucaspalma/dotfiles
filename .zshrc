@@ -124,3 +124,6 @@ alias svim="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.config/nvim/
 # editing and saving .zshrc
 alias czsh="nvim ~/.zshrc"
 alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && git add .zshrc && git commit -m 'upd .zshrc' && git push"
+
+# updates the local dotfiles repo and updates all dotfiles. Note: needs to be updated each time a new dotfile is added.
+alias udot="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ./.zshrc ~ && cp ./init.lua ~/.config/nvim"
