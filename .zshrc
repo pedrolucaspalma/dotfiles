@@ -39,3 +39,6 @@ alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && g
 
 # updates the local dotfiles repo and updates all dotfiles from remote. Note: needs to be updated each time a new dotfile is added.
 alias udot="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ./.zshrc ~ && cp ./init.lua ~/.config/nvim"
+
+# NNN
+alias n="nnn -e"
