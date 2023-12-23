@@ -59,16 +59,46 @@ alias dcd="docker compose stop"
 alias cnas="ssh pedro@192.168.1.200"
 
 # opening and syncing Obsidian
-alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && updob && cd ~"
-alias updob="cd ~/Developer/obsidian-notes && git add . && git commit -a -m 'upd' && git push && cd ~"
+alias opob="
+    cd ~/Developer/obsidian-notes 
+    && git pull 
+    && flatpak run md.obsidian.Obsidian 
+    && updob 
+    && cd ~"
+
+alias updob="
+    cd ~/Developer/obsidian-notes 
+    && git commit -a -m 'upd' 
+    && git push 
+    && cd ~
+    "
 
 # editing and saving init.lua and other neovim config files
 alias cdvim="cd ~/.config/nvim"
-alias svim="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.config/nvim . && git commit -a -m 'upd neovim folder' && git push"
+
+alias svim="
+    cd ~/Developer/dotfiles-e-scripts/ 
+    && git pull 
+    && cp -r ~/.config/nvim . 
+    && git commit -a -m 'upd neovim folder' 
+    && git push
+    "
 
 # editing and saving .zshrc
 alias czsh="nvim ~/.zshrc"
-alias szsh="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ~/.zshrc . && git add .zshrc && git commit -m 'upd .zshrc' && git push"
+
+alias szsh="
+    cd ~/Developer/dotfiles-e-scripts/ && 
+    git pull && 
+    cp ~/.zshrc . && 
+    git add .zshrc && 
+    git commit -m 'upd .zshrc' && 
+    git push
+    "
 
 # updates the local dotfiles repo and updates all dotfiles from remote. Note: needs to be updated each time a new dotfile is added.
-alias udot="cd ~/Developer/dotfiles-e-scripts/ && git pull && cp ./.zshrc ~ && cp -r ./nvim ~/.config/nvim"
+alias udot="
+    cd ~/Developer/dotfiles-e-scripts/ 
+    && git pull 
+    && cp ./.zshrc ~ 
+    && cp -r ./nvim ~/.config/nvim"
