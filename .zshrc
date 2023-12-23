@@ -60,28 +60,28 @@ alias cnas="ssh pedro@192.168.1.200"
 
 # opening and syncing Obsidian
 alias opob="
-    cd ~/Developer/obsidian-notes 
-    && git pull 
-    && flatpak run md.obsidian.Obsidian 
-    && updob 
-    && cd ~"
+    cd ~/Developer/obsidian-notes &&
+    git pull &&
+    flatpak run md.obsidian.Obsidian &&
+    updob &&
+    cd ~"
 
 alias updob="
     cd ~/Developer/obsidian-notes 
-    && git commit -a -m 'upd' 
-    && git push 
-    && cd ~
+    git commit -a -m 'upd' &&
+    git push &&
+    cd ~
     "
 
 # editing and saving init.lua and other neovim config files
 alias cdvim="cd ~/.config/nvim"
 
 alias svim="
-    cd ~/Developer/dotfiles-e-scripts/ 
-    && git pull 
-    && cp -r ~/.config/nvim . 
-    && git commit -a -m 'upd neovim folder' 
-    && git push
+    cd ~/Developer/dotfiles-e-scripts/ &&
+    git pull &&
+    cp -r ~/.config/nvim . &&
+    git commit -a -m 'upd neovim folder' &&
+    git push
     "
 
 # editing and saving .zshrc
@@ -98,7 +98,7 @@ alias szsh="
 
 # updates the local dotfiles repo and updates all dotfiles from remote. Note: needs to be updated each time a new dotfile is added.
 alias udot="
-    cd ~/Developer/dotfiles-e-scripts/ 
-    && git pull 
-    && cp ./.zshrc ~ 
-    && cp -r ./nvim ~/.config/nvim"
+    cd ~/Developer/dotfiles-e-scripts/ &&
+    git pull &&
+    cp ./.zshrc ~ &&
+    cp -r ./nvim ~/.config/nvim"
