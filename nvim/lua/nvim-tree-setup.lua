@@ -12,3 +12,6 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
+--Open filetree
+vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<cr>')
