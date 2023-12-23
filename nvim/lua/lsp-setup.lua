@@ -55,6 +55,7 @@ local servers = {
   tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
   eslint = {},
+  gopls = {},
   elixirls = {},
   lua_ls = {
     Lua = {
