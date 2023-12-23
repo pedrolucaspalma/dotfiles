@@ -95,9 +95,9 @@ require('lazy').setup({
       end,
     },
   },
-
+  -- Themes download
+  -- Theme inspired by Atom
   {
-    -- Theme inspired by Atom
     'navarasu/onedark.nvim',
     priority = 1000,
     config = function()
@@ -506,11 +506,16 @@ require("conform").setup({
   },
 })
 
-require 'cmp'.setup {
+require('cmp').setup {
   sources = {
     { name = 'nvim_lsp' }
-  }
+  },
 }
+-- Lua
+require('onedark').setup {
+  style = 'warmer'
+}
+require('onedark').load()
 
 vim.keymap.set('n', '\\s', ":w<CR>")
 
