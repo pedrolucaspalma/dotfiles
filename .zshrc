@@ -101,4 +101,4 @@ alias udot="
     cd ~/Developer/dotfiles-e-scripts/ &&
     git pull &&
     cp ./.zshrc ~ &&
-    cp -r ./nvim ~/.config/nvim"
+    cp -r ./nvim ~/.config"
