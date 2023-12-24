@@ -53,9 +53,12 @@ end
 --  define the property 'filetypes' to the map in question.
 local servers = {
   tsserver = {},
-  html = { filetypes = { 'html', 'twig', 'hbs' } },
+  -- html = { filetypes = { 'html', 'twig', 'hbs' } },
+  -- emmet_language_server = {},
   eslint = {},
+  goimports = {},
   gopls = {},
+  emmet_ls = {},
   elixirls = {},
   lua_ls = {
     Lua = {

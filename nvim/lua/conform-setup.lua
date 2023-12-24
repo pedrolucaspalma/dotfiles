@@ -6,7 +6,7 @@ require("conform").setup({
     javascriptreact = { { "prettierd", "prettier" } },
     typescriptreact = { { "prettierd", "prettier" } },
     tex = { "latexindent" },
-    go = { "gofmt" }
+    go = { "goimports", "gofmt" }
   },
   format_on_save = {
     -- These options will be passed to conform.format()
