@@ -13,16 +13,18 @@ vim.opt.termguicolors = true
 
 require 'lazy-bootstrap'
 require 'lazy-plugins'
+require 'lsp-setup'
+
 require 'options'
 require 'keymaps'
+
 require 'telescope-setup'
-require 'treesitter-setup'
-require 'lsp-setup'
-require 'cmp-setup'
-require 'conform-setup'
-require 'theme-onedark-setup'
-require 'nvim-tree-setup'
-require 'barbar-setup'
+require 'syntax-highlight'
+require 'autocomplete'
+require 'formatter'
+require 'theme'
+require 'filetree'
+require 'tabs'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
