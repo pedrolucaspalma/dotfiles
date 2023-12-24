@@ -1,0 +1,4 @@
+- Tabs containing files to allow for quick-switching
+- Must press ctrl b twice to toggle file tree
+- Improve HTML support
+- ZSH: add path
