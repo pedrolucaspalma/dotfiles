@@ -56,7 +56,7 @@ local servers = {
   -- html = { filetypes = { 'html', 'twig', 'hbs' } },
   -- emmet_language_server = {},
   eslint = {},
-  goimports = {},
+  -- goimports = {},
   gopls = {},
   emmet_ls = {},
   elixirls = {},
