@@ -56,13 +56,11 @@ local servers = {
   -- html = { filetypes = { 'html', 'twig', 'hbs' } },
   -- emmet_language_server = {},
   eslint                          = {},
-  --   goimports                       = {},
   gopls                           = {},
   emmet_ls                        = {},
   dockerls                        = {},
   docker_compose_language_service = {},
   elixirls                        = {},
-  -- djlint                          = {},
   templ                           = {},
   lua_ls                          = {
     Lua = {
