@@ -64,6 +64,8 @@ require('nvim-treesitter.configs').setup {
     },
   },
 }
+
+-- templ is not a recognized extension by default, so we must define it here
 vim.filetype.add({
   extension = {
     templ = "templ",
