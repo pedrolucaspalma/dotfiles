@@ -1,4 +1,14 @@
-- Tabs containing files to allow for quick-switching
-- Must press ctrl b twice to toggle file tree
-- Improve HTML support
 - ZSH: add path
+
+## Keybindings
+
+### Telescope/LSP
+gD -> [g]o to [D]eclaration
+gI -> [g]o to [I]mplementation
+gR -> [g]o to [R]eferences
+
+<leader>gF -> find git files
+### 
+K -> hover do[K]umentation
+
+<leader>D -> type [D]efinition
