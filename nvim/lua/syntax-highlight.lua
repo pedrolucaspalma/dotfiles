@@ -8,6 +8,15 @@ require('nvim-treesitter.configs').setup {
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
   auto_install = false,
 
+  refactor = {
+    smart_rename = {
+      enable = true,
+      keymaps = {
+        smart_rename = "<F2>",
+      },
+    },
+  },
+
   highlight = { enable = true },
   indent = { enable = true },
   incremental_selection = {
