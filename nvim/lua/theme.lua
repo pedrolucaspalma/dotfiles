@@ -1,5 +1,5 @@
 -- Lua
 require('onedark').setup {
-  style = 'warmer'
+  style = 'deep'
 }
 require('onedark').load()
