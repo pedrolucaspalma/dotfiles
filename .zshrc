@@ -9,6 +9,7 @@ export EDITOR='nvim'
 
 export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
+export CGO_ENABLED=1
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
