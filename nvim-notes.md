@@ -1,4 +1,7 @@
-- ZSH: add path
+## TODO
+
+[] - Fix auto Imports on NAS
+[] - 
 
 ## Keybindings
 
