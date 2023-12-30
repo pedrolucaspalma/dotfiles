@@ -6,6 +6,7 @@ plugins=(git docker docker-compose git jsontools)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
+export TERM=xterm-256color
 
 export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
