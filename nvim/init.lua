@@ -19,12 +19,12 @@ require 'options'
 require 'keymaps'
 
 require 'telescope-setup'
-require 'syntax-highlight'
-require 'autocomplete'
-require 'formatter'
+require 'treesitter-setup'
+require 'cmp-setup'
+require 'conform-setup'
 require 'theme'
-require 'filetree'
-require 'tabs'
+require 'nvim-filetree-setup'
+require 'barbar-setup'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
