@@ -16,6 +16,8 @@ fpath=(${ASDF_DIR}/completions $fpath)
 
 autoload -Uz compinit && compinit
 export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+
 export NVM_DIR="$HOME/.nvm"
 export CGO_ENABLED=1
 
