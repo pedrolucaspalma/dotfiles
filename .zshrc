@@ -8,6 +8,13 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 export TERM=xterm-256color
 
+
+. "$HOME/.asdf/asdf.sh"
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+
+autoload -Uz compinit && compinit
 export PATH=$PATH:/usr/local/go/bin
 export NVM_DIR="$HOME/.nvm"
 export CGO_ENABLED=1
@@ -81,3 +88,11 @@ alias cdvim="cd ~/.config/nvim"
 
 # editing and saving .zshrc
 alias czsh="nvim ~/.zshrc"
+
+# pnpm
+export PNPM_HOME="/home/pedro/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
