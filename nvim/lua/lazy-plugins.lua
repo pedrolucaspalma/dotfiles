@@ -13,6 +13,9 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- Add context
+  'nvim-treesitter/nvim-treesitter-context',
+
   -- Install filesystem tree view package, icons and extension
   'nvim-tree/nvim-tree.lua',
   'nvim-tree/nvim-web-devicons',
