@@ -152,6 +152,8 @@ require('lazy').setup({
       },
     },
   },
+  -- show recently opened files in telescope
+  -- "smartpde/telescope-recent-files",
 
   {
     -- Highlight, edit, and navigate code
