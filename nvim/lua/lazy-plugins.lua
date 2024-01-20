@@ -25,7 +25,7 @@ require('lazy').setup({
   'norcalli/nvim-colorizer.lua',
 
   -- Harpoon
-  -- 'ThePrimeagen/harpoon',
+  'ThePrimeagen/harpoon',
 
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -80,7 +80,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',  opts = {} },
+  { 'folke/which-key.nvim',     opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -102,7 +102,6 @@ require('lazy').setup({
     },
   },
   -- Themes download
-  -- Theme inspired by Atom
   {
     'navarasu/onedark.nvim',
     priority = 1000,
@@ -110,6 +109,7 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
+  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 
   {
     -- Set lualine as statusline
