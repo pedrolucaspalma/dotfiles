@@ -1,4 +1,5 @@
 ## TODO
+- Mensagens de LSP sendo cortadas
 
 ## Glossary
 <M> = alt
@@ -18,6 +19,14 @@
 ctrl + w + q -> Fechar janela atual
 ctrl + w + s -> Split horizontal (metade da tela na horizontal) 
 ctrl + w + v -> Split vertical (metade da tela na vertical)
+
+### filetree
+x -> marca arquivo para cortar
+p -> cola arquivos marcados
+a -> inicia modo insert para criação.
+
+ctrl + x -> Abre arquivo com split horizontal
+ctrl + v -> Abre arquivo com split vertical
 
 ### Fugititive (git)
 :Git - Abre a tela do fugitive
