@@ -1,11 +1,14 @@
 ## TODO
 
-[] - Fix auto Imports on NAS
-[] - 
+## Glossary
+<M> = alt
+<leader> = espaço
+<C> = ctrl
 
 ## Keybindings
 <leader> = espaço
 <M-tecla> = Alt (segurando) + tecla
+
 
 ### Tabs
 <M-h> <M-w> Mover entre abas
@@ -15,6 +18,9 @@
 ctrl + w + q -> Fechar janela atual
 ctrl + w + s -> Split horizontal (metade da tela na horizontal) 
 ctrl + w + v -> Split vertical (metade da tela na vertical)
+
+### Fugititive (git)
+
 
 ### Telescope/LSP
 gD -> [g]o to [D]eclaration
