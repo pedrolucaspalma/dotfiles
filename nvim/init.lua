@@ -24,10 +24,10 @@ require 'cmp-setup'
 require 'conform-setup'
 require 'theme'
 require 'nvim-filetree-setup'
-require 'barbar-setup'
+-- require 'barbar-setup'
 require 'fidget-setup'
 require 'treesitter-context-setup'
 require 'colorizer-setup'
--- require 'harpoon-setup'
+require 'harpoon-setup'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

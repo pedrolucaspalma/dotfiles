@@ -1,5 +1,3 @@
--- Currently commented on init.lua.
---
 require('harpoon').setup({
   -- sets the marks upon calling `toggle` on the ui, instead of require `:w`.
   save_on_toggle = false,
@@ -28,11 +26,11 @@ require('harpoon').setup({
 require('telescope').load_extension('harpoon')
 
 -- mark
-vim.keymap.set('n', '<leader>hx', require('harpoon.mark').add_file)
+vim.keymap.set('n', '<leader>ha', require('harpoon.mark').add_file)
 
 -- next/previous mark
 vim.keymap.set('n', '<leader>hn', require('harpoon.ui').nav_next)
 vim.keymap.set('n', '<leader>hp', require('harpoon.ui').nav_prev)
 
--- show marks
-vim.keymap.set('n', '<leader>hs', require('harpoon.ui').toggle_quick_menu)
+-- list marks
+vim.keymap.set('n', '<leader>ht', require('harpoon.ui').toggle_quick_menu)

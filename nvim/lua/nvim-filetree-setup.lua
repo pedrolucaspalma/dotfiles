@@ -10,10 +10,10 @@ require("nvim-tree").setup({
   },
   update_focused_file = {
     enable = true
-  }
-  -- filters = {
-  --   dotfiles = true,
-  -- },
+  },
+  filters = {
+    dotfiles = false,
+  },
 })
 
 --Open filetree
