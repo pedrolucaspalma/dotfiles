@@ -68,7 +68,8 @@ local servers = {
       telemetry = { enable = false },
     },
   },
-  marksman                        = {},
+  -- Mardown LSP and snippets. Turned off due to snippets being intrusive
+  -- marksman                        = {},
 }
 
 -- Setup neovim lua configuration

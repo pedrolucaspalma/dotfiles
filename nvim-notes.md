@@ -7,18 +7,19 @@
 <C> = ctrl
 
 ## Keybindings
+<C>
 <leader> = espaço
 <M-tecla> = Alt (segurando) + tecla
 
 
-### Tabs
+### Tabs (comentado)
 <M-h> <M-w> Mover entre abas
 <M-w> Fechar aba
 
 ### Splits
-ctrl + w + q -> Fechar janela atual
-ctrl + w + s -> Split horizontal (metade da tela na horizontal) 
-ctrl + w + v -> Split vertical (metade da tela na vertical)
+<C wq> -> Fechar janela atual
+<C ws> -> Split horizontal (metade da tela na horizontal) 
+<C wv> -> Split vertical (metade da tela na vertical)
 
 ### filetree
 x -> marca arquivo para cortar
