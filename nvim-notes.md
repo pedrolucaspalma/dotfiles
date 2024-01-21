@@ -20,6 +20,10 @@ ctrl + w + s -> Split horizontal (metade da tela na horizontal)
 ctrl + w + v -> Split vertical (metade da tela na vertical)
 
 ### Fugititive (git)
+:Git - Abre a tela do fugitive
+
+a - Add/remove arquivo trackeado. Add/Remove arquivo não traqueado do git
+cc - commit (abre tela de mensagem. Escreve mensagem e ZZ)
 
 
 ### Telescope/LSP
