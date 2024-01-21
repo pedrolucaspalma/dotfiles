@@ -1,5 +1,4 @@
 ## TODO
-- Mensagens de LSP sendo cortadas
 
 ## Glossary
 <M> = alt
