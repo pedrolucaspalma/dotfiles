@@ -58,6 +58,7 @@ alias lsalias="cat ~/.zshrc | grep 'alias '"
 
 # updating system
 alias yayf="yay -Syu  && flatpak update -y"
+alias upd="sudo apt update && sudo apt upgrade -y && flatpak update -y"
 
 # docker aliases
 alias dcu="docker compose up -d && docker logs -f sticky-api"
