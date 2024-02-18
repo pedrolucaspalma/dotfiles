@@ -1,4 +1,24 @@
-## TODO
+## tmux
+
+tmux new
+tmux new -s [name]
+
+<prefix> = ctrl + B
+
+<prefix>, D -> sair deixando a sessão aberta (detach)
+
+ctrl + D ou exit -> sair fechando a sessão (exit)
+
+
+tmux attach -t [name]
+tmux ls
+
+<prefix>, " -> dividir horizontalmente
+<prefix>, % -> dividir verticalmente
+
+<prefix>, setinha -> navegar entre painéis
+
+
 
 ## Glossary
 <M> = alt
