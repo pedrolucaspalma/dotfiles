@@ -62,6 +62,7 @@ local servers = {
   docker_compose_language_service = {},
   elixirls                        = {},
   templ                           = {},
+  prettier                        = {},
   lua_ls                          = {
     Lua = {
       workspace = { checkThirdParty = false },
