@@ -9,12 +9,12 @@ require('nvim-treesitter.configs').setup {
   auto_install = false,
 
   refactor = {
-    smart_rename = {
-      enable = true,
-      keymaps = {
-        smart_rename = "<F2>",
-      },
-    },
+    -- smart_rename = {
+    --   enable = true,
+    --   keymaps = {
+    --     smart_rename = "<F2>",
+    --   },
+    -- },
   },
 
   highlight = { enable = true },

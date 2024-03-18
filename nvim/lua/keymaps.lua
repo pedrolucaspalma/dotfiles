@@ -16,6 +16,8 @@ vim.keymap.set("v", "<S-Tab>", "<gv")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
