@@ -68,7 +68,7 @@ local servers = {
       telemetry = { enable = false },
     },
   },
-  r_languageserver                = {},
+  r_language_server               = {},
 
   -- biome                           = { filetypes = { 'json' } }
   -- Mardown LSP and snippets. Turned off due to snippets being intrusive
