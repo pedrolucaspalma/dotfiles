@@ -3,6 +3,8 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git docker docker-compose git jsontools)
 
+PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
+
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='nvim'
@@ -81,6 +83,8 @@ alias updob="
     git push &&
     cd ~
     "
+
+alias vim="/home/pedro/Developer/tt/tt nvim"
 
 # editing and saving init.lua and other neovim config files
 alias cdvim="cd ~/.config/nvim"
