@@ -70,19 +70,9 @@ alias dcd="docker compose stop"
 alias cnas="ssh pedro@192.168.1.200"
 
 # opening and syncing Obsidian
-alias opob="
-    cd ~/Developer/obsidian-notes &&
-    git pull &&
-    flatpak run md.obsidian.Obsidian &&
-    updob &&
-    cd ~"
+alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && updob && cd ~"
 
-alias updob="
-    cd ~/Developer/obsidian-notes 
-    git commit -a -m 'upd' &&
-    git push &&
-    cd ~
-    "
+alias updob="cd ~/Developer/obsidian-notes && git commit -a -m 'upd' && git push && cd ~"
 
 alias vim="/home/pedro/Developer/tt/tt nvim"
 
