@@ -70,7 +70,7 @@ alias dcd="docker compose stop"
 alias cnas="ssh pedro@192.168.1.200"
 
 # connecting to Raspberry Pi 4
-alias cnas="ssh pedro@192.168.1.9"
+alias crasp="ssh pedro@192.168.1.9"
 
 # opening and syncing Obsidian
 alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && updob && cd ~"
