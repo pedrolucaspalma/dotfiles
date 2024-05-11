@@ -68,6 +68,7 @@ local servers = {
       telemetry = { enable = false },
     },
   },
+  cssls                           = {},
   -- r_language_server               = {},
 
   -- biome                           = { filetypes = { 'json' } }

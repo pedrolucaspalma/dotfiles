@@ -4,6 +4,11 @@
 -- See `:help vim.keymap.set()`
 -- vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
+-- Sync clipboard between OS and Neovim.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.opt.clipboard = 'unnamedplus'
+
 vim.keymap.set("n", "<leader>y", ":so <CR>")
 
 -- Fast Indenting
