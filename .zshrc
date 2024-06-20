@@ -35,7 +35,7 @@ alias dcu="docker compose up -d && docker logs -f sticky-api"
 alias dcd="docker compose stop"
 
 # connecting to Banana Pi M5
-alias cnas="ssh pedro@192.168.1.200"
+# alias cnas="ssh pedro@192.168.1.200"
 
 # connecting to Raspberry Pi 4
 alias crasp="ssh pedro@192.168.1.201"
@@ -54,6 +54,8 @@ alias cdvim="cd ~/.config/nvim"
 alias czsh="nvim ~/.zshrc"
 
 alias opsticky="sh /home/pedro/Developer/dotfiles/tmux-scripts/opsticky.sh"
+alias opmwro="sh /home/pedro/Developer/dotfiles/tmux-scripts/opmwro.sh"
+alias optaxi="sh /home/pedro/Developer/dotfiles/tmux-scripts/optaxi.sh"
 
 # pnpm
 export PNPM_HOME="/home/pedro/.local/share/pnpm"
