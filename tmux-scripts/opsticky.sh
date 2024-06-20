@@ -42,6 +42,8 @@ if [ $? != 0 ]
 
     tmux split-window -v -t $SESSIONNAME:4
     tmux send-keys -t $SESSIONNAME:4.3 "cd ~/Developer/sticky/sticky-community" C-m
+    tmux send-keys -t $SESSIONNAME:4.3 "code ." C-m
+    tmux send-keys -t $SESSIONNAME:4.3 "clear" C-m
 fi
 
 tmux attach -t $SESSIONNAME
