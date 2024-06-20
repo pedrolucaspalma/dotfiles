@@ -41,6 +41,7 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME:4.2 "./nodebb dev" C-m
 
     tmux split-window -v -t $SESSIONNAME:4
+    tmux send-keys -t $SESSIONNAME:4.3 "cd ~/Developer/sticky/sticky-community" C-m
 fi
 
 tmux attach -t $SESSIONNAME
