@@ -35,14 +35,14 @@ if [ $? != 0 ]
     tmux send-keys -t $SESSIONNAME:4 "clear" C-m
     tmux split-window -h -t $SESSIONNAME:4
 
-    tmux send-keys -t $SESSIONNAME:4.1 "docker compose up" C-m
+#    tmux send-keys -t $SESSIONNAME:4.1 "docker compose up" C-m
     tmux send-keys -t $SESSIONNAME:4.2 "cd ~/Developer/sticky/sticky-community" C-m
     tmux send-keys -t $SESSIONNAME:4.2 "clear" C-m
-    tmux send-keys -t $SESSIONNAME:4.2 "./nodebb dev" C-m
+#    tmux send-keys -t $SESSIONNAME:4.2 "./nodebb dev" C-m
 
     tmux split-window -v -t $SESSIONNAME:4
     tmux send-keys -t $SESSIONNAME:4.3 "cd ~/Developer/sticky/sticky-community" C-m
-    tmux send-keys -t $SESSIONNAME:4.3 "code ." C-m
+#    tmux send-keys -t $SESSIONNAME:4.3 "code ." C-m
     tmux send-keys -t $SESSIONNAME:4.3 "clear" C-m
 
     # Opening notes on window 5
