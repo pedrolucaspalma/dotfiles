@@ -1,10 +1,6 @@
 #!/bin/zsh                                                                                                   
 
 SESSIONNAME="sticky"
-tmux has-session -t $SESSIONNAME &> /dev/null
-
-if [ $? != 0 ]
- then
     tmux new-session -d -s $SESSIONNAME
 
     # Running API on window 1
@@ -49,6 +45,5 @@ if [ $? != 0 ]
     tmux new-window -t $SESSIONNAME:5 -n 'notes'
     tmux send-keys -t $SESSIONNAME:5 "cd ~/Developer/sticky" C-m
     tmux send-keys -t $SESSIONNAME:5 "clear" C-m
-fi
 
 tmux attach -t $SESSIONNAME
