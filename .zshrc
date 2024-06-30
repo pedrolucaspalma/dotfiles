@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
-plugins=(git docker docker-compose git jsontools)
+plugins=(git)
 
 PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
 
@@ -10,9 +10,6 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 export TERM=xterm-256color
 
-# initialise completions with ZSH's compinit
-
-autoload -Uz compinit && compinit
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 
@@ -77,7 +74,7 @@ alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian
 
 alias updob="cd ~/Developer/obsidian-notes && git commit -a -m 'upd' && git push && cd ~"
 
-alias vim="/home/pedro/Developer/tt/tt nvim"
+#alias vim="/home/pedro/Developer/tt/tt nvim"
 
 # editing and saving init.lua and other neovim config files
 alias cdvim="cd ~/.config/nvim"
