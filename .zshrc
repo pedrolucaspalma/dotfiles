@@ -3,11 +3,11 @@ eval "$(starship init zsh)"
 
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list '' \
-▎ 'm:{a-z\-}={A-Z\_}' \
-▎ 'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
-▎ 'r:|?=** m:{a-z\-}={A-Z\_}'
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+#zstyle ':completion:*' matcher-list '' \
+#▎ 'm:{a-z\-}={A-Z\_}' \
+#▎ 'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+#▎ 'r:|?=** m:{a-z\-}={A-Z\_}'
+ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
 
@@ -45,7 +45,7 @@ alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian
 
 alias updob="cd ~/Developer/obsidian-notes && git commit -a -m 'upd' && git push && cd ~"
 
-alias vim="/home/pedro/Developer/tt/tt nvim"
+# alias vim="/home/pedro/Developer/tt/tt nvim"
 
 # editing and saving init.lua and other neovim config files
 alias cdvim="cd ~/.config/nvim"
