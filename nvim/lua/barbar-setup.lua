@@ -1,4 +1,4 @@
--- Commented
+-- ***************** Commented on lazy-setup *****************
 
 require('barbar').setup {
   sidebar_filetypes = {
