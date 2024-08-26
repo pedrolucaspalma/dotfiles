@@ -13,6 +13,5 @@ ln -sf ~/Developer/dotfiles/.tmux.conf ~/.tmux.conf
 
 # neovim configs
 rm -rf ~/.config/nvim
-ln -sf ~/Developer/dotfiles/ ~/.config/nvim
 ln -sf ~/Developer/dotfiles/nvim ~/.config/nvim
 
