@@ -6,7 +6,7 @@ rm -rf ~/.config/nvim
 ln -sf ~/Developer/dotfiles/.zshrc ~/.zshrc
 
 # tmux
-ln -sf ~/Developer/dotfiles/tmux.conf ~/tmux.conf 
+ln -sf ~/Developer/dotfiles/.tmux.conf ~/.tmux.conf 
 
 # wifi -> olhar wifi.md
 
