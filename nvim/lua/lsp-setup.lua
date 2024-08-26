@@ -52,15 +52,12 @@ end
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- html = { filetypes = { 'html', 'twig', 'hbs' } },
-  -- emmet_language_server = {},
   tsserver                        = {},
   eslint                          = {},
   gopls                           = {},
   emmet_ls                        = {},
   dockerls                        = {},
   docker_compose_language_service = {},
-  elixirls                        = {},
   templ                           = {},
   lua_ls                          = {
     Lua = {
@@ -69,6 +66,9 @@ local servers = {
     },
   },
   cssls                           = {},
+  -- html = { filetypes = { 'html', 'twig', 'hbs' } },
+  -- emmet_language_server = {},
+  -- elixirls                        = {},
   -- r_language_server               = {},
 
   -- biome                           = { filetypes = { 'json' } }
