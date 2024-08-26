@@ -63,15 +63,11 @@ alias upd="sudo apt update && sudo apt upgrade -y && flatpak update -y"
 alias dcu="docker compose up -d && docker logs -f sticky-api"
 alias dcd="docker compose stop"
 
-# connecting to Banana Pi M5
-alias cnas="ssh pedro@192.168.1.200"
-
-# connecting to Raspberry Pi 4
-alias crasp="ssh pedro@192.168.1.201"
+# connecting to NAS (Raspberry Pi 4)
+alias cnas="ssh pedro@nas"
 
 # opening and syncing Obsidian
 alias opob="cd ~/Developer/obsidian-notes && git pull && flatpak run md.obsidian.Obsidian && updob && cd ~"
-
 alias updob="cd ~/Developer/obsidian-notes && git commit -a -m 'upd' && git push && cd ~"
 
 #alias vim="/home/pedro/Developer/tt/tt nvim"
