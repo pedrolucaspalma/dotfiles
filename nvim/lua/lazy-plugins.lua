@@ -1,6 +1,5 @@
 -- NOTE: Here is where you install your plugins.
 --  You can configure plugins using the `config` key.
---
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
@@ -25,7 +24,7 @@ require('lazy').setup({
   'norcalli/nvim-colorizer.lua',
 
   -- Harpoon
-  'ThePrimeagen/harpoon',
+  -- 'ThePrimeagen/harpoon',
 
   -- Copilot
   -- 'github/copilot.vim',
@@ -52,20 +51,23 @@ require('lazy').setup({
     'stevearc/conform.nvim',
     opts = {},
   },
-  -- {
-  --   'romgrk/barbar.nvim',
-  --   dependencies = {
-  --     'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
-  --     'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-  --   },
-  --   opts = {
-  --     -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-  --     -- animation = true,
-  --     -- insert_at_start = true,
-  --     -- …etc.
-  --   },
-  --   version = '^1.0.0', -- optional: only update when a new 1.x version is released
-  -- },
+  {
+    'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+    },
+    opts = {
+      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+      -- animation = true,
+      -- insert_at_start = true,
+      -- …etc.
+    },
+    init = function()
+      vim.g.barbar_auto_setup = false
+    end,
+    version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -168,6 +170,13 @@ require('lazy').setup({
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
     build = ':TSUpdate',
+  },
+
+  {
+    'nvim-tree/nvim-web-devicons',
+    config = function()
+      require('nvim-web-devicons').setup()
+    end
   },
 
   'nvim-treesitter/nvim-treesitter-refactor',
