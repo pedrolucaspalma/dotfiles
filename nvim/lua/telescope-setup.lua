@@ -25,7 +25,8 @@ require('telescope').setup {
       '--line-number',
       '--column',
       '--hidden',
-      '--ignore-case' -- Always ignore case in grep
+      '--ignore-case',  -- Always ignore case in grep
+      '--fixed-strings' -- Always search for text, never regex
     }
   },
 }
