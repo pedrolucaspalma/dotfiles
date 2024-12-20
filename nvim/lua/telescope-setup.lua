@@ -4,7 +4,7 @@ require('telescope').setup {
       fuzzy = true,                   -- enable fuzzy search
       override_generic_sorter = true, -- override the default sorter
       override_file_sorter = true,    -- override the file sorter
-      case_mode = "smart_case",       -- ignore case unless capitalized
+      case_mode = "ignore_case",      -- ignore case unless capitalized
     }
   },
   defaults = {
