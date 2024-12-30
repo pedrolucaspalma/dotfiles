@@ -58,6 +58,7 @@ local servers = {
   dockerls                        = {},
   docker_compose_language_service = {},
   templ                           = {},
+  ts_ls                           = {},
   lua_ls                          = {
     Lua = {
       workspace = { checkThirdParty = false },
