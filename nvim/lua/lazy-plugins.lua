@@ -16,9 +16,19 @@ require('lazy').setup({
   'nvim-treesitter/nvim-treesitter-context',
 
   -- Install filesystem tree view package, icons and extension
-  'nvim-tree/nvim-tree.lua',
-  'nvim-tree/nvim-web-devicons',
+  -- 'nvim-tree/nvim-tree.lua',
+  -- 'nvim-tree/nvim-web-devicons',
   'antosha417/nvim-lsp-file-operations',
+
+  {
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
+    -- Optional dependencies
+    dependencies = { { "echasnovski/mini.icons", opts = {} } },
+    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+  },
 
   -- Color preview
   'norcalli/nvim-colorizer.lua',
@@ -51,23 +61,23 @@ require('lazy').setup({
     'stevearc/conform.nvim',
     opts = {},
   },
-  {
-    'romgrk/barbar.nvim',
-    dependencies = {
-      'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
-      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-    },
-    opts = {
-      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-      -- animation = true,
-      -- insert_at_start = true,
-      -- …etc.
-    },
-    init = function()
-      vim.g.barbar_auto_setup = false
-    end,
-    version = '^1.0.0', -- optional: only update when a new 1.x version is released
-  },
+  -- {
+  --   'romgrk/barbar.nvim',
+  --   dependencies = {
+  --     'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
+  --     'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+  --   },
+  --   opts = {
+  --     -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+  --     -- animation = true,
+  --     -- insert_at_start = true,
+  --     -- …etc.
+  --   },
+  --   init = function()
+  --     vim.g.barbar_auto_setup = false
+  --   end,
+  --   version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  -- },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
