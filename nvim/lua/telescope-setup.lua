@@ -7,6 +7,11 @@ require('telescope').setup {
       case_mode = "ignore_case",      -- ignore case unless capitalized
     }
   },
+  pickers = {
+    oldfiles = {
+      cwd_only = true
+    }
+  },
   defaults = {
     file_ignore_patterns = {
       "node_modules", "logs", "build"
