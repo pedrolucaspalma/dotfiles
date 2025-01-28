@@ -12,11 +12,16 @@ export TERM=xterm-256color
 
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
-
-export NVM_DIR="$HOME/.nvm"
 export CGO_ENABLED=1
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+# Lazy-load nvm
+export NVM_DIR="$HOME/.nvm"
+nvm() {
+  unset -f nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  nvm "$@"
+}
+
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # NNN cd on quit
@@ -85,3 +90,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# bun completions
+[ -s "/home/pedro/.bun/_bun" ] && source "/home/pedro/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
