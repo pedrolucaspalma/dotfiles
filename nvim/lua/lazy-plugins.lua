@@ -16,19 +16,19 @@ require('lazy').setup({
   'nvim-treesitter/nvim-treesitter-context',
 
   -- Install filesystem tree view package, icons and extension
-  -- 'nvim-tree/nvim-tree.lua',
-  -- 'nvim-tree/nvim-web-devicons',
+  'nvim-tree/nvim-tree.lua',
+  'nvim-tree/nvim-web-devicons',
   'antosha417/nvim-lsp-file-operations',
 
-  {
-    'stevearc/oil.nvim',
-    ---@module 'oil'
-    ---@type oil.SetupOpts
-    opts = {},
-    -- Optional dependencies
-    dependencies = { { "echasnovski/mini.icons", opts = {} } },
-    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
-  },
+  -- {
+  --   'stevearc/oil.nvim',
+  --   ---@module 'oil'
+  --   ---@type oil.SetupOpts
+  --   opts = {},
+  --   -- Optional dependencies
+  --   dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  --   -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
+  -- },
 
   -- Color preview
   'norcalli/nvim-colorizer.lua',
