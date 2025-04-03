@@ -19,8 +19,9 @@ vim.keymap.set("v", "<Tab>", ">gv")
 vim.keymap.set("v", "<S-Tab>", "<gv")
 
 -- Rebinding vertical movements to put the cursor at the middle of the screen
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+-- Currently disabled to favor neoscroll-setup bindings
+-- vim.keymap.set("n", "<C-d>", "<C-d>zz")
+-- vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Rename asset using LSP (vscode F2)
 vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
