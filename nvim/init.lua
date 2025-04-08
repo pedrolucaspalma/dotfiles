@@ -29,7 +29,7 @@ require 'fidget-setup'
 require 'treesitter-context-setup'
 require 'colorizer-setup'
 require 'nvim-scrollbar-setup'
-require 'fugitive-setup'
+-- require 'fugitive-setup'
 require 'neoscroll-setup'
 -- require 'harpoon-setup'
 -- The line beneath this is called `modeline`. See `:help modeline`
