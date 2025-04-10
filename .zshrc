@@ -81,3 +81,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+
+# Load private, untracked config
+[[ -f "$HOME/.zshrc.private" ]] && source "$HOME/.zshrc.private"
+
+# =============== Nuvidio variables =============
+alias opvpn="sh /home/pedro/Developer/dotfiles/connect-vpn.sh"

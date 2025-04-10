@@ -4,6 +4,7 @@
 # .zshrc
 rm -rf ~/.zshrc
 ln -sf ~/Developer/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/Developer/dotfiles/.zshrc.private ~/.zshrc.private
 
 # tmux
 rm -rf ~/.tmux.conf
