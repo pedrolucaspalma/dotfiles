@@ -66,15 +66,7 @@ local servers = {
     },
   },
   cssls                           = {},
-  ts_ls                           = {}
-  -- html = { filetypes = { 'html', 'twig', 'hbs' } },
-  -- emmet_language_server = {},
-  -- elixirls                        = {},
-  -- r_language_server               = {},
-
-  -- biome                           = { filetypes = { 'json' } }
-  -- Mardown LSP and snippets. Turned off due to snippets being intrusive
-  -- marksman                        = {},
+  clangd                          = {},
 }
 
 -- Setup neovim lua configuration
