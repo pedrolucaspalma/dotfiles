@@ -12,8 +12,8 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
-  -- Add context
-  'nvim-treesitter/nvim-treesitter-context',
+  -- -- Add context
+  -- 'nvim-treesitter/nvim-treesitter-context',
 
   -- Install filesystem tree view package, icons and extension
   'nvim-tree/nvim-tree.lua',
@@ -125,6 +125,12 @@ require('lazy').setup({
     end,
   },
   { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 
   {
     -- Set lualine as statusline
