@@ -67,6 +67,16 @@ local servers = {
   },
   cssls                           = {},
   clangd                          = {},
+  pylsp                           = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = { "E501" },
+          maxLineLength = 120, -- optional: increases line length instead of ignoring
+        },
+      },
+    },
+  },
 }
 
 -- Setup neovim lua configuration
