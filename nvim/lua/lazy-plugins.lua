@@ -69,20 +69,20 @@ require('lazy').setup({
     lazy = false,
   },
   -- Themes download
-  -- {
-  --   'navarasu/onedark.nvim',
-  --   priority = 1000,
-  --   config = function()
-  --     vim.cmd.colorscheme 'onedark'
-  --   end,
-  -- },
-  -- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
+    'navarasu/onedark.nvim',
     priority = 1000,
-    opts = {},
+    config = function()
+      vim.cmd.colorscheme 'onedark'
+    end,
   },
+  -- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  -- },
 
   {
     -- Set lualine as statusline

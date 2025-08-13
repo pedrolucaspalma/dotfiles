@@ -24,7 +24,7 @@ vim.opt.rtp:prepend(lazypath)
 require 'lazy-plugins'
 
 -- [[ Theme ]]
-vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme onedark")
 
 -- [[ LSP / Mason setup ]]
 require 'lsp-setup'
