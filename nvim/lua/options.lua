@@ -39,3 +39,8 @@ vim.o.relativenumber = true
 
 -- Disable swap file
 vim.opt.swapfile = false
+
+-- Sync clipboard between OS and Neovim.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.o.clipboard = 'unnamedplus'
