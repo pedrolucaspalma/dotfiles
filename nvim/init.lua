@@ -14,7 +14,7 @@ if not vim.loop.fs_stat(lazypath) then
     'clone',
     '--filter=blob:none',
     'https://github.com/folke/lazy.nvim.git',
-    '--branch=stable', -- latest stable release
+    '--branch=stable',
     lazypath,
   }
 end
@@ -58,7 +58,6 @@ require("conform").setup({
     html = { "djlint" },
   },
   format_on_save = {
-    -- These options will be passed to conform.format()
     timeout_ms = 500,
     lsp_fallback = true,
   },
@@ -120,20 +119,13 @@ require("oil").setup({
     ["g\\"] = { "actions.toggle_trash", mode = "n" },
   },
   view_options = {
-    -- Show files and directories that start with "."
     show_hidden = true,
-    -- This function defines what is considered a "hidden" file
     is_hidden_file = function(name, bufnr)
       local m = name:match("^%.")
       return m ~= nil
     end,
-    -- This function defines what will never be shown, even when `show_hidden` is set
     is_always_hidden = function(name, bufnr)
       return false
-    end,
-    -- Customize the highlight group for the file name
-    highlight_filename = function(entry, is_hidden, is_link_target, is_link_orphan)
-      return nil
     end,
   },
 })
@@ -143,11 +135,9 @@ local oil_open = false
 vim.keymap.set("n", "<C-b>", function()
   local bufname = vim.api.nvim_buf_get_name(0)
   if oil_open and bufname:match("^oil://") then
-    -- Close Oil: go back to the previous buffer
     vim.cmd("b#")
     oil_open = false
   else
-    -- Open Oil in current directory
     require("oil").open()
     oil_open = true
   end
