@@ -65,7 +65,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',     opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -87,14 +87,14 @@ require('lazy').setup({
     },
   },
   -- Themes download
-  {
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
-  },
-  { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+  -- {
+  --   'navarasu/onedark.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'onedark'
+  --   end,
+  -- },
+  -- { "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
   {
     "folke/tokyonight.nvim",
     lazy = false,
