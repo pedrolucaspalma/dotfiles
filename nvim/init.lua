@@ -14,7 +14,7 @@ vim.opt.termguicolors = true
 require 'lazy-bootstrap'
 require 'lazy-plugins'
 require 'lsp-setup'
-require 'lsp-status'
+-- require 'lsp-status'
 
 require 'options'
 require 'keymaps'
