@@ -138,6 +138,21 @@ require("oil").setup({
   },
 })
 
+local oil_open = false
+
+vim.keymap.set("n", "<C-b>", function()
+  local bufname = vim.api.nvim_buf_get_name(0)
+  if oil_open and bufname:match("^oil://") then
+    -- Close Oil: go back to the previous buffer
+    vim.cmd("b#")
+    oil_open = false
+  else
+    -- Open Oil in current directory
+    require("oil").open()
+    oil_open = true
+  end
+end, { desc = "Toggle Oil file browser" })
+
 -- [[ General Settings options ]]
 vim.o.hlsearch = false
 vim.wo.number = true
