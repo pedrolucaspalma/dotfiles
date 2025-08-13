@@ -167,9 +167,6 @@ require('lazy').setup({
 
   'nvim-treesitter/nvim-treesitter-refactor',
 
-  -- Scrollbar with gitsigns integration
-  'petertriho/nvim-scrollbar',
-
   -- Git Blame
   {
     "f-person/git-blame.nvim",
