@@ -36,3 +36,6 @@ vim.o.termguicolors = true
 
 -- Enable relative line numbers
 vim.o.relativenumber = true
+
+-- Disable swap file
+vim.opt.swapfile = false

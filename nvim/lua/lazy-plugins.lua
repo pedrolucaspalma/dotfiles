@@ -36,6 +36,14 @@ require('lazy').setup({
   -- Harpoon
   -- 'ThePrimeagen/harpoon',
 
+  -- AI section
+  -- {
+  --   "supermaven-inc/supermaven-nvim",
+  --   config = function()
+  --     require("supermaven-nvim").setup({})
+  --   end,
+  -- },
+
   -- Copilot
   -- 'github/copilot.vim',
 
