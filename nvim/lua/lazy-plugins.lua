@@ -15,34 +15,12 @@ require('lazy').setup({
   -- -- Add context
   -- 'nvim-treesitter/nvim-treesitter-context',
 
-  -- Install filesystem tree view package, icons and extension
-  'nvim-tree/nvim-tree.lua',
+  -- Install icons and lsp-file-operations
   'nvim-tree/nvim-web-devicons',
   'antosha417/nvim-lsp-file-operations',
 
-  -- {
-  --   'stevearc/oil.nvim',
-  --   ---@module 'oil'
-  --   ---@type oil.SetupOpts
-  --   opts = {},
-  --   -- Optional dependencies
-  --   dependencies = { { "echasnovski/mini.icons", opts = {} } },
-  --   -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if prefer nvim-web-devicons
-  -- },
-
   -- Color preview
   'norcalli/nvim-colorizer.lua',
-
-  -- Harpoon
-  -- 'ThePrimeagen/harpoon',
-
-  -- AI section
-  -- {
-  --   "supermaven-inc/supermaven-nvim",
-  --   config = function()
-  --     require("supermaven-nvim").setup({})
-  --   end,
-  -- },
 
   -- Copilot
   -- 'github/copilot.vim',
@@ -203,6 +181,7 @@ require('lazy').setup({
 
   -- Scrollbar with gitsigns integration
   'petertriho/nvim-scrollbar',
+
   -- Git Blame
   {
     "f-person/git-blame.nvim",
