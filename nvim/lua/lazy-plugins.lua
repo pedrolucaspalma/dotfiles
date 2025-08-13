@@ -1,5 +1,4 @@
 require('lazy').setup({
-  -- NOTE: First, some plugins that don't require any configuration
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
@@ -50,13 +49,11 @@ require('lazy').setup({
       -- Adds LSP completion capabilities
       'hrsh7th/cmp-nvim-lsp',
 
-      -- Adds a number of user-friendly snippets
-      -- 'rafamadriz/friendly-snippets',
     },
   },
 
-  -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',  opts = {} },
+  -- -- Useful plugin to show you pending keybinds.
+  -- { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -105,13 +102,6 @@ require('lazy').setup({
         section_separators = '',
       },
     },
-  },
-
-  {
-    -- Add indentation guides even on blank lines
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {}
   },
 
   -- "gc" to comment visual regions/lines
