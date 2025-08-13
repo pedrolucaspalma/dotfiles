@@ -1,5 +1,4 @@
 require('lazy').setup({
-
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
