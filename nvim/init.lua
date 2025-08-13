@@ -1,50 +1,10 @@
--- [[ Setting options ]]
+-- [[ Mapping Leader to space ]]
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.o.hlsearch = false
-vim.wo.number = true
-vim.o.mouse = 'a'
-vim.o.breakindent = true
-vim.o.undofile = true
-vim.o.ignorecase = true
-vim.o.smartcase = true
-vim.wo.signcolumn = 'yes'
-vim.o.updatetime = 250
-vim.o.timeoutlen = 300
-vim.o.completeopt = 'menuone,noselect'
-vim.o.termguicolors = true
-vim.o.relativenumber = true
-vim.o.swapfile = false
-vim.o.clipboard = 'unnamedplus'
-vim.o.wrap = false
--- vim.g.loaded_netrw = 1
--- vim.g.loaded_netrwPlugin = 1
-
--- [[ Keymaps options ]]
--- Fast Indenting
-vim.keymap.set("n", "<Tab>", ">>")
-vim.keymap.set("n", "<S-Tab>", "<<")
-vim.keymap.set("v", "<Tab>", ">gv")
-vim.keymap.set("v", "<S-Tab>", "<gv")
-
--- Rebinding vertical movements to put the cursor at the middle of the screen
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-
-vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
-
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
-})
-
-vim.keymap.set('v', '<C-c>', '"+y', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-c>', '"+yy', { noremap = true, silent = true })
+-- [[ Disabling netrw ]]
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- [[ Package Manager ]]
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -117,7 +77,6 @@ require('barbar').setup {
   clickable = true,
 }
 
--- Goto buffer in position...
 vim.keymap.set('n', '<M-1>', '<Cmd>BufferGoto 1<CR>')
 vim.keymap.set('n', '<M-2>', '<Cmd>BufferGoto 2<CR>')
 vim.keymap.set('n', '<M-3>', '<Cmd>BufferGoto 3<CR>')
@@ -134,4 +93,92 @@ vim.keymap.set('n', '<M-w>', '<Cmd>BufferClose<CR>')
 
 
 vim.g.barbar_auto_setup = false
+
+-- [[ Setup File Manager / oil ]]
+require("oil").setup({
+  skip_confirm_for_simple_edits = true,
+  lsp_file_methods = {
+    autosave_changes = true,
+  },
+  watch_for_changes = true,
+  keymaps = {
+    ["g?"] = { "actions.show_help", mode = "n" },
+    ["<CR>"] = "actions.select",
+    ["<C-s>"] = { "actions.select", opts = { vertical = true } },
+    ["<C-h>"] = { "actions.select", opts = { horizontal = true } },
+    ["<C-t>"] = { "actions.select", opts = { tab = true } },
+    ["<C-p>"] = "actions.preview",
+    ["<C-c>"] = { "actions.close", mode = "n" },
+    ["<C-l>"] = "actions.refresh",
+    ["-"] = { "actions.parent", mode = "n" },
+    ["_"] = { "actions.open_cwd", mode = "n" },
+    ["`"] = { "actions.cd", mode = "n" },
+    ["~"] = { "actions.cd", opts = { scope = "tab" }, mode = "n" },
+    ["gs"] = { "actions.change_sort", mode = "n" },
+    ["gx"] = "actions.open_external",
+    ["g."] = { "actions.toggle_hidden", mode = "n" },
+    ["g\\"] = { "actions.toggle_trash", mode = "n" },
+  },
+  view_options = {
+    -- Show files and directories that start with "."
+    show_hidden = true,
+    -- This function defines what is considered a "hidden" file
+    is_hidden_file = function(name, bufnr)
+      local m = name:match("^%.")
+      return m ~= nil
+    end,
+    -- This function defines what will never be shown, even when `show_hidden` is set
+    is_always_hidden = function(name, bufnr)
+      return false
+    end,
+    -- Customize the highlight group for the file name
+    highlight_filename = function(entry, is_hidden, is_link_target, is_link_orphan)
+      return nil
+    end,
+  },
+})
+
+-- [[ General Settings options ]]
+vim.o.hlsearch = false
+vim.wo.number = true
+vim.o.mouse = 'a'
+vim.o.breakindent = true
+vim.o.undofile = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.wo.signcolumn = 'yes'
+vim.o.updatetime = 250
+vim.o.timeoutlen = 300
+vim.o.completeopt = 'menuone,noselect'
+vim.o.termguicolors = true
+vim.o.relativenumber = true
+vim.o.swapfile = false
+vim.o.clipboard = 'unnamedplus'
+vim.o.wrap = false
+
+-- [[ Keymaps options ]]
+-- Fast Indenting
+vim.keymap.set("n", "<Tab>", ">>")
+vim.keymap.set("n", "<S-Tab>", "<<")
+vim.keymap.set("v", "<Tab>", ">gv")
+vim.keymap.set("v", "<S-Tab>", "<gv")
+
+-- Rebinding vertical movements to put the cursor at the middle of the screen
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+vim.keymap.set("n", "<F2>", vim.lsp.buf.rename)
+
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+  group = highlight_group,
+  pattern = '*',
+})
+
+vim.keymap.set('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-c>', '"+yy', { noremap = true, silent = true })
+
 -- vim: ts=2 sts=2 sw=2 et
