@@ -1,12 +1,7 @@
--- NOTE: Here is where you install your plugins.
---  You can configure plugins using the `config` key.
---  You can also configure plugins after the setup call,
---    as they will be available in your neovim runtime.
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
   -- Git related plugins
-  -- 'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
   -- Detect tabstop and shiftwidth automatically
@@ -25,8 +20,6 @@ require('lazy').setup({
   -- Copilot
   -- 'github/copilot.vim',
 
-  -- NOTE: This is where your plugins related to LSP can be installed.
-  --  The configuration is done below. Search for lspconfig to find it below.
   {
     -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
@@ -49,12 +42,7 @@ require('lazy').setup({
       'lewis6991/gitsigns.nvim',     -- OPTIONAL: for git status
       'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
     },
-    opts = {
-      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-      -- animation = true,
-      -- insert_at_start = true,
-      -- …etc.
-    },
+    opts = {},
     init = function()
       vim.g.barbar_auto_setup = false
     end,
@@ -200,9 +188,5 @@ require('lazy').setup({
       virtual_text_column = 1, -- virtual text start column, check Start virtual text at column section for more options
     },
   },
-  {
-    "karb94/neoscroll.nvim",
-    opts = {},
-  }
 
 }, {})
