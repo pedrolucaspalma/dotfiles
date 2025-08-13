@@ -1,21 +1,12 @@
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
-  -- Git related plugins
-  'tpope/vim-rhubarb',
-
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
-
-  -- -- Add context
-  -- 'nvim-treesitter/nvim-treesitter-context',
 
   -- Install icons and lsp-file-operations
   'nvim-tree/nvim-web-devicons',
   'antosha417/nvim-lsp-file-operations',
-
-  -- Color preview
-  'norcalli/nvim-colorizer.lua',
 
   -- Copilot
   -- 'github/copilot.vim',
