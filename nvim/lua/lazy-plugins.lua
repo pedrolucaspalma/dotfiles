@@ -5,13 +5,10 @@ require('lazy').setup({
   'antosha417/nvim-lsp-file-operations',
 
   {
-    -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
-      -- Automatically install LSPs to stdpath for neovim
       { 'williamboman/mason.nvim',          config = true },
       { 'williamboman/mason-lspconfig.nvim' },
-
       { 'folke/neodev.nvim' },
     },
   },
@@ -61,12 +58,15 @@ require('lazy').setup({
     },
   },
   {
-    'stevearc/oil.nvim',
-    ---@module 'oil'
-    ---@type oil.SetupOpts
-    opts = {},
-    dependencies = { "nvim-tree/nvim-web-devicons" },
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
     lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
   },
   -- Themes download
   {

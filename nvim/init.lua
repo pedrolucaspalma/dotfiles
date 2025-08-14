@@ -93,55 +93,13 @@ vim.keymap.set('n', '<M-w>', '<Cmd>BufferClose<CR>')
 
 vim.g.barbar_auto_setup = false
 
--- [[ Setup File Manager / oil ]]
-require("oil").setup({
-  skip_confirm_for_simple_edits = true,
-  lsp_file_methods = {
-    autosave_changes = true,
-  },
-  watch_for_changes = true,
-  keymaps = {
-    ["g?"] = { "actions.show_help", mode = "n" },
-    ["<CR>"] = "actions.select",
-    ["<C-s>"] = { "actions.select", opts = { vertical = true } },
-    ["<C-h>"] = { "actions.select", opts = { horizontal = true } },
-    ["<C-t>"] = { "actions.select", opts = { tab = true } },
-    ["<C-p>"] = "actions.preview",
-    ["<C-c>"] = { "actions.close", mode = "n" },
-    ["<C-l>"] = "actions.refresh",
-    ["-"] = { "actions.parent", mode = "n" },
-    ["_"] = { "actions.open_cwd", mode = "n" },
-    ["`"] = { "actions.cd", mode = "n" },
-    ["~"] = { "actions.cd", opts = { scope = "tab" }, mode = "n" },
-    ["gs"] = { "actions.change_sort", mode = "n" },
-    ["gx"] = "actions.open_external",
-    ["g."] = { "actions.toggle_hidden", mode = "n" },
-    ["g\\"] = { "actions.toggle_trash", mode = "n" },
-  },
-  view_options = {
-    show_hidden = true,
-    is_hidden_file = function(name, bufnr)
-      local m = name:match("^%.")
-      return m ~= nil
-    end,
-    is_always_hidden = function(name, bufnr)
-      return false
-    end,
-  },
-})
+-- [[ Setup File Manager / nvim-tree ]]
+require("nvim-tree").setup()
 
-local oil_open = false
-
+-- Toggle with Ctrl+B
 vim.keymap.set("n", "<C-b>", function()
-  local bufname = vim.api.nvim_buf_get_name(0)
-  if oil_open and bufname:match("^oil://") then
-    vim.cmd("b#")
-    oil_open = false
-  else
-    require("oil").open()
-    oil_open = true
-  end
-end, { desc = "Toggle Oil file browser" })
+  require("nvim-tree.api").tree.toggle()
+end, { desc = "Toggle NvimTree" })
 
 -- [[ General Settings options ]]
 vim.o.hlsearch = false
