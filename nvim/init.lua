@@ -94,7 +94,15 @@ vim.keymap.set('n', '<M-w>', '<Cmd>BufferClose<CR>')
 vim.g.barbar_auto_setup = false
 
 -- [[ Setup File Manager / nvim-tree ]]
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+  git = {
+    ignore = false
+  },
+  update_focused_file = {
+    enable = true,
+    update_root = false
+  },
+})
 
 -- Toggle with Ctrl+B
 vim.keymap.set("n", "<C-b>", function()
@@ -117,7 +125,7 @@ vim.o.termguicolors = true
 vim.o.relativenumber = true
 vim.o.swapfile = false
 vim.o.clipboard = 'unnamedplus'
-vim.o.wrap = false
+vim.o.wrap = true
 
 -- [[ Keymaps options ]]
 -- Fast Indenting
