@@ -22,6 +22,7 @@ alias cdvim="cd ~/.config/nvim"
 alias cdnvim="cd ~/.config/nvim"
 alias cvim="cdvim && nvim ."
 alias cnvim="cdvim && nvim ."
+alias open="xdg-open"
 
 alias czsh="nvim ~/.zshrc"
 
