@@ -131,5 +131,10 @@ require('lazy').setup({
   },
 
   'nvim-treesitter/nvim-treesitter-refactor',
-
+  {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup({})
+    end,
+  },
 }, {})
