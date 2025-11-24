@@ -16,7 +16,7 @@ export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 # aliases
 alias lsalias="cat ~/.zshrc | grep 'alias '"
 
-alias cnas="ssh pedro@nas"
+alias cnas="ssh pedro@192.168.7.201"
 
 alias cdvim="cd ~/.config/nvim"
 alias cdnvim="cd ~/.config/nvim"
@@ -35,10 +35,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-
-. "$HOME/.local/bin/env"
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
