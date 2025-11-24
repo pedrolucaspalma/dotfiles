@@ -11,6 +11,9 @@ sudo pacman -S --noconfirm nodejs
 # NPM
 sudo pacman -S --noconfirm npm
 
+# Flatpak
+sudo pacman -S --noconfirm flatpak
+
 # Go
 curl -fsSL https://go.dev/dl/go1.25.4.linux-amd64.tar.gz | sudo tar -xz -C /usr/local
 
