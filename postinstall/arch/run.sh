@@ -29,10 +29,10 @@ sudo pacman -S --noconfirm neovim
 sudo pacman -S --noconfirm ghostty
 
 # Zen browser
-yay -S zen-browser-bin --answerclean None --answerdiff None
+yay -S zen-browser-bin --noconfirm --answerclean None --answerdiff None
 
 # Google Chrome
-yay -S google-chrome --answerclean None --answerdiff None
+yay -S google-chrome --noconfirm --answerclean None --answerdiff None
 
 # VLC
 sudo pacman -S --noconfirm vlc
@@ -47,10 +47,13 @@ sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm lazygit
 
 # downgrade
-yay -S downgrade --answerclean None --answerdiff None
+yay -S downgrade --noconfirm --answerclean None --answerdiff None
 
 # ripgrep
 sudo pacman -S --noconfirm ripgrep
+
+# neofetch
+yay -S neofetch --noconfirm --answerclean None --answerdiff None
 
 echo 'All the software has been installed'
 
