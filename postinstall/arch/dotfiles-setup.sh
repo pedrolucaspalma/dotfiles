@@ -5,8 +5,6 @@ cd ~/Developer
 git clone git@github.com:pedrolucaspalma/dotfiles.git
 cd dotfiles
 
-git checkout refactoring-neovim
-
 rm -rf ~/.zshrc
 ln -sf ~/Developer/dotfiles/.zshrc ~/.zshrc
 
