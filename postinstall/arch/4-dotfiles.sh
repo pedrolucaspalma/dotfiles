@@ -16,3 +16,5 @@ ln -sf ~/Developer/dotfiles/nvim ~/.config/nvim
 
 echo 'dotfiles has been installed'
 echo 'Remember to add the github tokens to .zshrc.private: https://github.com/settings/tokens'
+
+#TODO check GOPRIVATE 
