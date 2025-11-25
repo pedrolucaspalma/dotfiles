@@ -1,15 +1,8 @@
 #!/bin/bash
 
-sudo pacman -S --noconfirm tlp
-# maybe check if tlp-rdw is worth it?
-# sudo pacman -S --noconfirm tlp-rdw
+sudo pacman -S --noconfirm tuned tuned-ppd
 
-sudo systemctl enable tlp.service 
-sudo systemctl start tlp.service
+sudo systemctl enable tuned.service 
+sudo systemctl start tuned.service
 
-echo '====================================================================='
-echo 'checking tlp...'
-sudo tlp-stat -s
-echo '====================================================================='
-# run sensors to check if fans are working.
-# yay -S asusctl --noconfirm --answerclean None --answerdiff None
+yay -S asusctl --noconfirm --answerclean None --answerdiff None
