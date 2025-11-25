@@ -11,4 +11,5 @@ echo '====================================================================='
 echo 'checking tlp...'
 sudo tlp-stat -s
 echo '====================================================================='
-yay -S asusctl --noconfirm --answerclean None --answerdiff None
+# run sensors to check if fans are working.
+# yay -S asusctl --noconfirm --answerclean None --answerdiff None
