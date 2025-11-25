@@ -23,6 +23,7 @@ alias cdnvim="cd ~/.config/nvim"
 alias cvim="cdvim && nvim ."
 alias cnvim="cdvim && nvim ."
 alias open="xdg-open"
+alias opvpn="sudo openfortivpn -c /etc/openfortivpn/config"
 
 alias czsh="nvim ~/.zshrc"
 
