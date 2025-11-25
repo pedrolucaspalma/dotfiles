@@ -28,6 +28,12 @@ sudo pacman -S --noconfirm uv
 # Neovim
 sudo pacman -S --noconfirm neovim
 
+# wl-clipboard for neovim copy on yank
+sudo pacman -S --noconfirm wl-clipboard
+
+# ripgrep for fuzzy search
+sudo pacman -S --noconfirm ripgrep
+
 # Ghostty
 sudo pacman -S --noconfirm ghostty
 
@@ -52,13 +58,14 @@ sudo pacman -S --noconfirm lazygit
 # downgrade
 yay -S downgrade --noconfirm --answerclean None --answerdiff None
 
-# ripgrep
-sudo pacman -S --noconfirm ripgrep
-
 # neofetch
 yay -S neofetch --noconfirm --answerclean None --answerdiff None
 
+# openfortivpn
+pacman -S --noconfirm --answerclean None --answerdiff None openfortivpn
+
+# flyway
+yay -S flyway --noconfirm --answerclean None --answerdiff None
+
 echo 'All the software has been installed'
-
-
 
