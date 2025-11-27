@@ -67,5 +67,11 @@ pacman -S --noconfirm --answerclean None --answerdiff None openfortivpn
 # flyway
 yay -S flyway --noconfirm --answerclean None --answerdiff None
 
+# pgadmin4
+flatpak install app/org.pgadmin.pgadmin4/x86_64/stable
+
+# qbbitorrent
+sudo pacman -S --noconfirm qbittorrent
+
 echo 'All the software has been installed'
 
