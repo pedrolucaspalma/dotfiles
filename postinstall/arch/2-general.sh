@@ -44,7 +44,7 @@ yay -S zen-browser-bin --noconfirm --answerclean None --answerdiff None
 yay -S google-chrome --noconfirm --answerclean None --answerdiff None
 
 # VLC
-sudo pacman -S --noconfirm vlc
+flatpak install app/org.videolan.VLC/x86_64/stable
 
 # Jellyfin
 flatpak install app/com.github.iwalton3.jellyfin-media-player/x86_64/stable
