@@ -73,5 +73,8 @@ flatpak install app/org.pgadmin.pgadmin4/x86_64/stable
 # qbbitorrent
 sudo pacman -S --noconfirm qbittorrent
 
+# vscode
+yay -S visual-studio-code-bin --noconfirm --answerclean None --answerdiff None
+
 echo 'All the software has been installed'
 
