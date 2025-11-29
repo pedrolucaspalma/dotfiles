@@ -76,5 +76,8 @@ sudo pacman -S --noconfirm qbittorrent
 # vscode
 yay -S visual-studio-code-bin --noconfirm --answerclean None --answerdiff None
 
+# discord
+sudo pacman -S --noconfirm discord
+
 echo 'All the software has been installed'
 
