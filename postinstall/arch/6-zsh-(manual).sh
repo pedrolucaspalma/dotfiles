@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# sudo pacman -S --noconfirm zsh
+# chsh -s $(which zsh)
+
+# reboot...
+# 
+
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+
