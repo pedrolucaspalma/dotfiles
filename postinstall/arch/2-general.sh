@@ -79,5 +79,8 @@ yay -S visual-studio-code-bin --noconfirm --answerclean None --answerdiff None
 # discord
 sudo pacman -S --noconfirm discord
 
+# yt-dlp
+yay -S yt-dlp --noconfirm --answerclean None --answerdiff None
+
 echo 'All the software has been installed'
 
