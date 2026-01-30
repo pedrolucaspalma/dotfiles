@@ -46,3 +46,6 @@ eval "$(pyenv init -)"
 
 # Created by `pipx` on 2025-12-08 16:37:30
 export PATH="$PATH:/home/pedro/.local/bin"
+
+# opencode
+export PATH=/home/pedro/.opencode/bin:$PATH
