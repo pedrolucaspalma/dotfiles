@@ -137,4 +137,9 @@ require('lazy').setup({
       require("supermaven-nvim").setup({})
     end,
   },
+  { -- Auto close HTML tags
+    'windwp/nvim-ts-autotag',
+    event = 'InsertEnter',
+    opts = {},
+  },
 }, {})
