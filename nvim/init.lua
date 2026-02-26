@@ -110,6 +110,9 @@ vim.keymap.set("n", "<C-b>", function()
 end, { desc = "Toggle NvimTree" })
 
 -- [[ General Settings options ]]
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
 vim.o.hlsearch = false
 vim.wo.number = true
 vim.o.mouse = 'a'
