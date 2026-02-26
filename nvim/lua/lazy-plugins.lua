@@ -134,7 +134,15 @@ require('lazy').setup({
   {
     "supermaven-inc/supermaven-nvim",
     config = function()
-      require("supermaven-nvim").setup({})
+      require("supermaven-nvim").setup({
+        ignore_filetypes = {
+          text = true,
+          markdown = true,
+          html = true,
+          css = true,
+          lua = true,
+        },
+      })
     end,
   },
   { -- Auto close HTML tags
