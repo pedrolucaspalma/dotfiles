@@ -48,7 +48,6 @@ local servers = {
   eslint                          = {},
   gopls                           = {},
   html                            = {},
-  emmet_ls                        = {},
   dockerls                        = {},
   docker_compose_language_service = {},
   templ                           = {},
