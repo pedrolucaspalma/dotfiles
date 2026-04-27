@@ -14,7 +14,7 @@ export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 export OLLAMA_API_BASE=http://192.168.7.8:11434
 export AIDER_EDITOR=vim
-
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
 
 # aliases
 alias lsalias="cat ~/.zshrc | grep 'alias '"
@@ -27,6 +27,7 @@ alias cvim="cdvim && nvim ."
 alias cnvim="cdvim && nvim ."
 alias open="xdg-open"
 alias opvpn="sudo openfortivpn -c /etc/openfortivpn/config"
+alias nvim="~/Applications/nvim-linux-x86_64.appimage"
 
 alias czsh="nvim ~/.zshrc"
 
@@ -49,3 +50,15 @@ export PATH="$PATH:/home/pedro/.local/bin"
 
 # opencode
 export PATH=/home/pedro/.opencode/bin:$PATH
+
+# Usage: block instagram.com | unblock instagram.com
+block() {
+    echo "127.0.0.1 www.$1" | sudo tee -a /etc/hosts
+    echo "127.0.0.1 $1" | sudo tee -a /etc/hosts
+    echo "$1 is now blocked."
+}
+
+unblock() {
+    sudo sed -i "/$1/d" /etc/hosts
+    echo "$1 is now unblocked."
+}
